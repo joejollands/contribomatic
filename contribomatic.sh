@@ -14,3 +14,4 @@ echo $LOGENTRY >> log.txt
 
 git commit log.txt -m "$COMMITMESSAGE"
 
+git push
