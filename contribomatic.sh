@@ -4,13 +4,13 @@
 #  Contribomatic
 #
 
-DATETIME="date +%Y-%m-%d:%H:%M:%S"
+DATETIME=`date +%Y-%m-%d:%H:%M:%S`
 
 LOGENTRY="Auto Log at "$DATETIME
 
 COMMITMESSAGE="Updated Log File at "$DATETIME
 
-echo LOGENTRY >> ./log
+echo $LOGENTRY >> log.txt
 
-git commit ./log -m $COMMITMESSAGE
+git commit log.txt -m "$COMMITMESSAGE"
 
