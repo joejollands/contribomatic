@@ -6,7 +6,7 @@
 
 number=$RANDOM
 let "number %= 100"
-if [ $number -le 25 ]
+if [ $number -le 15 ]
     then
         /bin/bash ./contribomatic.sh
 fi
